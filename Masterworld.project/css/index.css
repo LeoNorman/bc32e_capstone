@@ -148,11 +148,33 @@ button.navbar-toggler .icon-expand:hover {
     color: #dc4f72;
 }
 
-/* @media screen and (min-width: 1200px) {
+.fa-bars {
+    background-color: #dc4f72;
+    color: #fff;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 4px;
+}
+
+.fa-times {
+    background-color: #dc4f72;
+    color: #fff;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 4px;
+}
+
+button.navbar-toggler .icon-expand {
+    display: block;
+}
+
+@media screen and (min-width: 1200px) {
  .container {
     max-width: 1200px;
 }
-} */
+}
 /* CAROUSEL  */
 
 .carousel {
