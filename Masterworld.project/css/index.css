@@ -54,17 +54,36 @@ a:hover {
     text-decoration: none;
 }
 
+@media screen and (max-width: 576px) {
+    body {
+       width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+
+
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
 /* HEADER  */
 
 header {
+    height: 90px;
     display: flex;
     align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-}
+    background-color: #fff;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+    transition: all 0.5s;
+  }
 
 header .menu {
     display: flex;
@@ -78,7 +97,7 @@ header .container .navbar-brand {
 }
 
 header .container .menu .nav-item {
-    padding: 0 7px;
+    padding: 0 15px;
     line-height: 54px;
 }
 
@@ -170,11 +189,31 @@ button.navbar-toggler .icon-expand {
     display: block;
 }
 
-@media screen and (min-width: 1200px) {
- .container {
-    max-width: 1200px;
+@media (min-width: 768px) {
+    header {
+        height: 90px;
+    }
 }
+
+@media (min-width: 576px) {
+    header {
+        height: auto;
+        padding: 15px 0;
+    }
 }
+
+@media (min-width: 768px) {
+    header .nav-fixed {
+        height: 70px;
+    }
+}
+
+@media (min-width: 576px) {
+    #header.nav-fixed {
+        height: auto;
+    }
+}
+
 /* CAROUSEL  */
 
 .carousel {
