@@ -189,31 +189,6 @@ button.navbar-toggler .icon-expand {
     display: block;
 }
 
-@media (min-width: 768px) {
-    header {
-        height: 90px;
-    }
-}
-
-@media (min-width: 576px) {
-    header {
-        height: auto;
-        padding: 15px 0;
-    }
-}
-
-@media (min-width: 768px) {
-    header .nav-fixed {
-        height: 70px;
-    }
-}
-
-@media (min-width: 576px) {
-    #header.nav-fixed {
-        height: auto;
-    }
-}
-
 /* CAROUSEL  */
 
 .carousel {
@@ -500,4 +475,55 @@ button.navbar-toggler .icon-expand {
 
 .solutions .card:hover .card__content .btn i {
     transform: translateX(0.3rem);
+}
+
+/* questions  */
+.questions {
+    background-color: #f7f9fc;
+    padding-top: 100px;
+}
+
+.questions .title {
+    text-align: center;
+}
+
+.questions .title h4 {
+    color: #dd5572;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.questions .title h2 {
+    font-size: 46px;
+    line-height: 1;
+    font-weight: 700;
+    color: #2c3038;
+}
+
+.questions .title p {
+    font-size: 16px;
+    line-height: 22.5px;
+    font-weight: 400;
+}
+
+.questions .col right #accordion .card {
+    background-color: #ffffff;
+    background-size: cover;
+}
+
+.btn-link {
+    color: black;
+    height: 70px;
+    font-size: 20px;
+}
+
+.btn-link:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.card-header:first-child {
+    background-color: white;
 }
