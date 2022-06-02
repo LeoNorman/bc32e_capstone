@@ -66,14 +66,6 @@ a:hover {
     }
 }
 
-
-
-@media screen and (min-width: 576px) {
-    .container {
-        max-width: 100%;
-    }
-}
-
 /* HEADER  */
 
 header {
@@ -187,6 +179,31 @@ button.navbar-toggler .icon-expand:hover {
 
 button.navbar-toggler .icon-expand {
     display: block;
+}
+
+@media (min-width: 768px) {
+    header {
+        height: 90px;
+    }
+}
+
+@media (min-width: 576px) {
+    header {
+        height: auto;
+        padding: 15px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    header .nav-fixed {
+        height: 70px;
+    }
+}
+
+@media (min-width: 576px) {
+    #header.nav-fixed {
+        height: auto;
+    }
 }
 
 /* CAROUSEL  */
