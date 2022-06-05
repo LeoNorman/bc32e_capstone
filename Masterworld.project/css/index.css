@@ -54,63 +54,6 @@ a:hover {
     text-decoration: none;
 }
 
-/* @media (min-width: 1280px) {
-    .container {
-        max-width: 1200px;
-    }
-} */
-
-
-/* @media screen and (max-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 100%;
-        padding-right: 25px;
-        padding-left: 25px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-}
-
-@media (min-width: 768px) {
-
-    .container,
-    .container-sm,
-    .container-md {
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 576px) {
-    .container {
-        max-width: 100%;
-        padding-right: 30px;
-        padding-left: 30px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-} 
-
-@media (max-width: 576px) {
-    .container {
-        max-width: 100%;
-    }
-}
-
-
-
-@media screen and (max-width: 576px) {
-    body {
-        width: 100%;
-    }
-} */
-
-
 /* HEADER  */
 
 
@@ -254,11 +197,6 @@ button.navbar-toggler .icon-expand:hover {
     border-radius: 4px;
 }
 
-/* 
-button.navbar-toggler .icon-expand {
-    display: block;
-} */
-
 #header #switchButton {
     margin-left: 5px;
     background-color: #dc4f72;
@@ -282,80 +220,34 @@ button.navbar-toggler .icon-expand {
     }
 }
 
-<<<<<<< HEAD
-@media (min-width: 768px) {
-    header {
-        height: 90px;
-    }
-}
-
-
-@media (min-width: 576px) {
-    header {
-        padding: 10px 0;
-    }
-}
-
-@media (max-width: 576px) {
-    header {
-        height: auto;
-    }
-}
-
-@media (min-width: 768px) {
-    #header .nav-fixed {
-        height: 70px;
-    }
-}
-
-@media only screen and (max-width: 991px) {
-    .navbar-expand-lg .menu .navbar-nav .nav-item {
-        line-height: 24px;
-        padding: 0;
-    }
-}
-
-@media only screen and (max-width: 991px) {
-    .navbar-expand-lg .navbar-nav .nav-link {
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 991px) {
-    .navbar-expand-lg .menu .navbar-nav .nav-link {
-        display: inline-block;
-        padding: 8px 0;
-    }
-}
-
-@media only screen and (max-width: 991px) {
-    .navbar-expand-lg .menu .navbar-nav .header__btn {
-        display: flex;
-        justify-content: center;
-        margin: 16px 0 0;
-    }
-
-    header {
-        height: auto;
-    }
-
-    #header .menu {
+@media (max-width: 992px) {
+    header .menu .navbar-nav {
         display: none;
     }
 
-    #header .menu.show {
+    header .menu.show .navbar-nav {
         display: block;
     }
-}
 
-@media only screen and (max-width: 991px) {
-    #header .fixed-top {
-        height: auto;
+    header .menu.show .nav-item {
+        line-height: 24px;
+        display: block;
+    }
+
+    header .menu.show .nav-link {}
+
+    header .menu.show .header__btn {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #header #switchButton {
+        position: absolute;
+        left: 210px;
     }
 }
 
-=======
->>>>>>> 237fc3da41329448f3d538319c758728804b0c6f
 /* CAROUSEL  */
 
 .carousel {
