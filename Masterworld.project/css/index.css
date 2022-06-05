@@ -500,10 +500,6 @@ button.navbar-toggler .icon-expand {
     padding-top: 100px;
 }
 
-.questions .title {
-    text-align: center;
-}
-
 .questions .title h4 {
     color: #dd5572;
     font-size: 16px;
@@ -543,4 +539,42 @@ button.navbar-toggler .icon-expand {
 
 .card-header:first-child {
     background-color: white;
+}
+
+/* project  */
+.nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 15px;
+    margin: 0;
+    list-style: none;
+    cursor: pointer;
+    /* float: left; */
+    /* width: 33.333%; */
+    text-align: center;
+    color: #4E5B61;
+    background: #fff;
+}
+
+.align-items-center {
+    margin-top: 30px;
+}
+
+.projects {
+    background-color: #f7f9fc;
+}
+
+/* footer  */
+.w3l-footer ul.social li a {
+    color: red;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
 }
