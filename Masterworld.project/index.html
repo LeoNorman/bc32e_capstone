@@ -27,13 +27,18 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- MAIN CSS  -->
+    <link rel="stylesheet" href="./css/themedark.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
-<body>
+<body id="myBody">
     <!-- HEADER  -->
-    <header class="fixed-top nav-fixed">
+    <header id="header" class="fixed-top">
         <div class="container">
+            <button class="btn" id="switchButton">
+                <i class="far fa-moon"></i>
+                <i class="fa fa-sun"></i>
+            </button>
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <!-- Brand -->
                 <a class="navbar-brand" href="#">
@@ -42,8 +47,7 @@
                 </a>
 
                 <!-- Toggler/collapsibe Button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
-                    aria-controls="collapsibleNavbar" aria-expanded="true" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
                     <span class="navbar-toggler-icon fa icon-close fa-times"></span>
                 </button>
@@ -75,24 +79,25 @@
         </div>
     </header>
     <!-- CAROUSEL  -->
-    <section class="carousel">
+    <section class="carousel" id="dcarousel">
         <div class="carousel__content">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 content__left">
                         <h3>We Execute Our Ideas From Start to Finish</h3>
-                        <p class="mt-3 mb-lg-5 mb-4 ">Building a beautiful interactive business for startups and innovative companies.</p>
+                        <p class="mt-3 mb-lg-5 mb-4 ">Building a beautiful interactive business for startups and
+                            innovative companies.</p>
                         <a href="#" class="btn btn-outline-danger theme-button">GET STARTED</a>
                     </div>
                     <div class="col-lg-6 content__right mt-lg-0 mt-5">
-                        <img src="./img/main.png" alt="">
+                        <img src="./img/main.png" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- CHOOSE  -->
-    <section class="choose text-center py-5">
+    <section class="choose text-center py-5" id="dchoose">
         <div class="container py-md-3">
             <div class="title mx-auto">
                 <h6>WHY CHOOSE US</h6>
@@ -136,7 +141,7 @@
             </div>
         </div>
     </section>
-    <section class="about py-5">
+    <section class="about py-5" id="dabout">
         <div class="container py-lg-3 mt-3">
             <div class="row align-items-center">
                 <div class="col-lg-6 left">
@@ -147,7 +152,7 @@
                         similique reiciendis, ab est magnam esse nesciunt ea fuga facere voluptatem.</p>
                     <a href="#" class="btn btn-outline-danger theme-button">READ MORE</a>
                 </div>
-                <div class="col-lg-6 right">
+                <div class="col-lg-6 pl-lg-5 mt-lg-0 mt-5 right">
                     <img src="./img/about.jpg" alt="" class="img-fluid shadow img-curve">
                 </div>
             </div>
@@ -180,7 +185,7 @@
             </div>
         </div>
     </section>
-    <div style="margin: 8px 0"></div>
+
     <section class="commit">
         <div class="commit__bg">
             <div class="container">
@@ -280,6 +285,8 @@
     <section class="testimonials"></section>
     <section class="community"></section>
     <footer></footer>
+
+    <a class="backtotop cd-top js-cd-top" href="#"><i class="fa fa-angle-up"></i></a>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -299,11 +306,30 @@
         integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- <script src="../../../../../Libary/counting_up_number_js/jquery.countup.js"></script> -->
     <script src="./js/jquery.countup.js"></script>
     <script>
         $('.counter').countUp();
     </script>
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 80) {
+                $("#header").addClass("nav-fixed");
+            } else {
+                $("#header").removeClass("nav-fixed");
+            }
+        });
+    </script>
+    <!-- THEME JS  -->
+     <script>
+        document.getElementById("switchButton").onclick = function () {
+            document.getElementById("myBody").classList.toggle("dark");
+        };
+    </script>
+
+    <!-- BACK TO TOP  -->
+    <script src="../../../../../Libary/back-to-top-master/assets/js/main.js"></script>
+    <script src="../../../../../Libary/back-to-top-master/assets/js/util.js"></script>
 </body>
 
 </html>
