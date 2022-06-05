@@ -680,31 +680,3 @@ element.style {}
 .solutions .card:hover .card__content .btn i {
     transform: translateX(0.3rem);
 }
-
-/* back top top */
-.backtotop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: var(--primary);
-    font-size: 20px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    color: #fff;
-    border-radius: 3px;
-    opacity: 0;
-    visibility: hidden;
-  }
-  .backtotop:hover{
-    color: #fff;
-    opacity: 1;
-  }
-  .cd-top--is-visible {
-    visibility: visible;
-    opacity: 1;
-  }
-  .cd-top--fade-out {
-    opacity: 0.5;
-  }
