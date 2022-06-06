@@ -276,9 +276,6 @@ a:hover {
     }
 }
 
-
-element.style {}
-
 @media screen and (max-width: 767px) {
     .theme-button {
         line-height: 44px;
