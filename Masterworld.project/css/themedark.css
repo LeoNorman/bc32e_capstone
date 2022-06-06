@@ -1,0 +1,278 @@
+/* Light theme */
+#switchButton .fa-sun {
+  display: none;
+}
+/* Dark Theme*/
+.dark #switchButton .fa-sun {
+  display: block;
+  color: #fff;
+}
+.dark #switchButton .fa-moon {
+  display: none;
+}
+/* header */
+.dark #header {
+  background-color: #000;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.dark #header.nav-fixed {
+  background-color: #000;
+}
+.dark #header .navbar-nav .nav-item .nav-link {
+  color: #fff;
+}
+.dark #header .navbar-nav .active .nav-link {
+  color: #dc4f72;
+}
+.dark #header .navbar-nav .header__btn .theme-button {
+  background-color: #dc4f72;
+  color: #fff;
+}
+.dark #header .navbar-nav .header__btn .btn-outline-danger:hover {
+  background-color: #fff;
+  color: #dc4f72;
+}
+/* carousel */
+.dark .carousel__content {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.85)), url(../img/banner.jpg);
+}
+.dark .carousel__content .row .content__left h3 {
+  color: #fff;
+}
+.dark #dcarousel .row .content__left p {
+  color: rgba(255, 255, 255, 0.6);
+}
+.dark .carousel .theme-button {
+  background-color: #dc4f72;
+  color: #fff;
+}
+.dark #dcarousel .theme-button:hover {
+  background-color: #fff;
+  color: #dc4f72;
+}
+/* Choose */
+.dark #dchoose{
+  background-color: #000;
+}
+.dark #dchoose .title h3{
+  color: #fff;
+}
+.dark #dchoose .title p{
+  color: rgba(255, 255, 255, 0.6);
+}
+.dark #dchoose .row .card{
+  background-color: #222;
+}
+.dark #dchoose .card h3{
+  color: #fff;
+}
+.dark #dchoose .card p{
+  color: rgba(255, 255, 255, 0.6);
+}
+/* about */
+.dark .about {
+  background-color: #000;
+}
+.dark #dabout .row .left h3 {
+  color: #fff;
+}
+.dark #dabout .row .left p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.dark #dabout .btn-outline-danger:hover:hover {
+  background-color: #fff;
+  color: #dc4f72;
+}
+
+
+/* STATISTIC  */
+.dark .statistic {
+  background-color: #000;
+}
+.dark .statistic .row .card{
+  background-color: #222;
+}
+.dark .statistic .row .card h4{
+  color:#fff;
+}
+.dark .statistic .row .card p{
+  color: rgba(255, 255, 255, 0.6);
+}
+.dark .statistic .row .card:hover{
+  box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.5);
+}
+.dark .statistic .btn-danger:hover {
+  background-color: #fff;
+  color: #dc4f72;
+}
+
+/* commit */
+.dark .commit__bg {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.95),
+      rgba(0, 0, 0, 0.85)
+    ),
+    url(../img/bg.jpg);
+}
+.dark .commit .btn-light {
+  color: #fff;
+  background-color: #dc4f72;
+  border-color: #dc4f72;
+}
+.dark .commit .btn-light:hover {
+  background-color: #fff;
+  color: var(--primary);
+}
+/* Solutions */
+.dark .solutions{
+  background-color: #000;
+}
+.dark .solutions .title h3{
+  color: #fff;
+}
+.dark .solutions .title p{
+  color: rgba(255, 255, 255, 0.6);
+}
+.dark .solutions__grid .card__content {
+  background-color: #222;
+  border-color: #eee;
+}
+.dark .solutions .card__content h4 a {
+  color: #fff;
+}
+.dark .solutions .card__content .card__text{
+  color: rgba(255, 255, 255, 0.6);
+}
+/* General */
+.dark #general{
+  background-color: #000;
+}
+.dark #general .row img{
+  box-shadow: 3px 3px 5px rgba(225, 219, 219, 0.5);
+}
+.dark #general .title h3 {
+  color: #fff;
+}
+.dark #general .title p {
+  color: rgba(255, 255, 255, 0.6);
+}
+.dark #general .question{
+  background-color: #222;
+}
+.dark #general .question button{
+  background-color: #222;
+  color: #fff;
+}
+.dark #general .question div{
+  color: rgba(255, 255, 255, 0.6);
+}
+/* Projects */
+.dark #projects{
+  background-color: #000;
+}
+.dark #projects .title h3 {
+  color: #fff;
+}
+.dark #projects .title p {
+  color: rgba(255, 255, 255, 0.6);
+}
+.dark #projects .main ul li a{
+  color: #fff;
+}
+.dark #projects .main ul li a.active{
+  background-color: #000;
+  color: var(--primary);
+}
+.dark #projects .main .tab-content h3{
+  color: #fff;
+}
+.dark #projects .main .tab-content p{
+  color: rgba(255, 255, 255, 0.6);
+}
+.dark #projects .btn-outline-primary {
+  color: #fff;
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.dark #projects .btn-outline-primary:hover {
+  background-color: #fff;
+  color: var(--primary);
+}
+/* testimonial */
+.dark #testimonial {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.77),
+      rgba(0, 0, 0, 0.77)
+    ),
+    url(../img/testimonal/bg.jpg);
+}
+.dark #testimonial .title h3 {
+  color: #fff;
+}
+.dark #testimonial .title p {
+  color: rgba(255, 255, 255, 0.6);
+}
+.dark #testimonial .main .item {
+  background-color: #222;
+}
+.dark #testimonial .main .right i {
+  opacity: 0.5;
+  color: rgba(255, 255, 255, 0.6);
+}
+.dark #testimonial .main .right p{
+  color: rgba(255, 255, 255, 0.6);
+}
+/* community */
+.dark #community{
+  background-color: #000;
+}
+.dark #community .main h3 {
+  color: #fff;
+}
+.dark #community .main p {
+  color: rgba(255, 255, 255, 0.6);
+}
+.dark #community .main .btn-outline-primary{
+  background-color: var(--primary);
+  color: #fff;
+}
+.dark #community .main .btn-outline-primary:hover {
+  color: var(--primary);
+  background-color: #fff;
+}
+.dark #community .btn-primary:hover {
+  background-color: #fff;
+  color: var(--primary);
+}
+/* footer */
+.dark #footer {
+  background-color: #000;
+}
+.dark #footer h3 {
+  color: #fff;
+}
+.dark #footer a{
+  color: rgba(255, 255, 255, 0.6);
+}
+.dark #footer a:hover{
+  color: var(--primary);
+}
+.dark #footer .form {
+  background-color: #222;
+}
+.dark #footer .form h4{
+  color: rgba(255, 255, 255, 0.6);
+}
+.dark #footer .form p{
+  color: rgba(255, 255, 255, 0.6);
+}
+.dark #footer .btn-primary{
+  color: #fff;
+}
+.dark #footer .btn-primary:hover {
+  color: #fff;
+}
