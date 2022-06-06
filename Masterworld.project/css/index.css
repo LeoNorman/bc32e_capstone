@@ -101,6 +101,10 @@ a:hover {
     color: #dc4f72;
 }
 
+#header .navbar-nav .nav-item .nav-link::before {
+    display: none;
+}
+
 #header .navbar-nav .nav-item .nav-link::after {
     content: "";
     width: 0;
