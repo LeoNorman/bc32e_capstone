@@ -15,13 +15,17 @@
   background-color: #000;
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
 }
-.dark #header .menu .navbar-nav .nav-item .nav-link {
+
+.dark #header.nav-fixed {
+  background-color: #000;
+}
+.dark #header .navbar-nav .nav-item .nav-link {
   color: #fff;
 }
 .dark #header .navbar-nav .active .nav-link {
   color: #dc4f72;
 }
-.dark #header .menu .navbar-nav .header__btn .theme-button {
+.dark #header .navbar-nav .header__btn .theme-button {
   background-color: #dc4f72;
   color: #fff;
 }
