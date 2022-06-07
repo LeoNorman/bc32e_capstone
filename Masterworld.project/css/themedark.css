@@ -108,6 +108,10 @@
   color: #dc4f72;
 }
 
+/* FREESPACE */
+.dark .freespace {
+  background-color: #000;
+}
 /* commit */
 .dark .commit__bg {
   background-image: linear-gradient(
@@ -133,7 +137,7 @@
 .dark .solutions .title h3{
   color: #fff;
 }
-.dark .solutions .title p{
+.dark #mysolutions .container .title p{
   color: rgba(255, 255, 255, 0.6);
 }
 .dark .solutions__grid .card__content {
@@ -143,7 +147,7 @@
 .dark .solutions .card__content h4 a {
   color: #fff;
 }
-.dark .solutions .card__content .card__text{
+.dark #mysolutions .row .card .card__content .card__text {
   color: rgba(255, 255, 255, 0.6);
 }
 /* General */
