@@ -32,30 +32,35 @@
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.css">
     <!-- MAIN CSS  -->
+    <link rel="stylesheet" href="./css/themedark.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
-<body>
+<body id="myBody">
     <!-- HEADER  -->
-    <header>
+    <header id="header" class="fixed-top">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="btn" id="switchButton">
+                <i class="far fa-moon"></i>
+                <i class="fa fa-sun"></i>
+            </button>
+            <nav class="navbar navbar-expand-lg">
                 <!-- Brand -->
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="./index.html">
                     <i class="far fa-handshake"></i>
                     <span>Masterwork</span>
                 </a>
 
                 <!-- Toggler/collapsibe Button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
-                    aria-controls="collapsibleNavbar" aria-expanded="true" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars show"></span>
                     <span class="navbar-toggler-icon fa icon-close fa-times"></span>
                 </button>
 
                 <!-- Navbar links -->
-                <div class="menu collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home</a>
                         </li>
@@ -66,13 +71,15 @@
                             <a class="nav-link" href="#">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pages <i class="fas fa-angle-down"></i></a>
+                            <a class="nav-link" href="#">Pages
+                                <i class="fa fa-angle-down"></i>
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
-                        <li class="header__btn">
-                            <a href="#" class="btn btn-outline-danger theme-button">SCHEDULE A DEMO</a>
+                        <li class="nav-item header__btn">
+                            <a class="btn btn-outline-danger theme-button" href="#">Schedule a Demo</a>
                         </li>
                     </ul>
                 </div>
@@ -80,33 +87,34 @@
         </div>
     </header>
     <!-- CAROUSEL  -->
-    <section class="carousel">
+    <section class="carousel" id="dcarousel">
         <div class="carousel__content">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col content__left">
+                    <div class="col-lg-6 content__left">
                         <h3>We Execute Our Ideas From Start to Finish</h3>
-                        <p>Building a beautiful interactive business for startups and innovative companies.</p>
+                        <p class="mt-3 mb-lg-5 mb-4 ">Building a beautiful interactive business for startups and
+                            innovative companies.</p>
                         <a href="#" class="btn btn-outline-danger theme-button">GET STARTED</a>
                     </div>
-                    <div class="col content__right">
-                        <img src="./img/main.png" alt="">
+                    <div class="col-lg-6 content__right mt-lg-0 mt-5">
+                        <img src="./img/main.png" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- CHOOSE  -->
-    <section class="choose text-center py-5">
+    <section class="choose text-center py-5" id="dchoose">
         <div class="container py-md-3">
-            <div class="title">
+            <div class="title mx-auto">
                 <h6>WHY CHOOSE US</h6>
                 <h3>Tools for business startup to professional</h3>
                 <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis
                     dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
             </div>
-            <div class="row">
-                <div class="col-4 mt-5">
+            <div class="row max-auto">
+                <div class="col-md-6 col-lg-4 mt-5">
                     <div class="card">
                         <a href="#">
                             <img src="./img/s1.png" alt="">
@@ -116,7 +124,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-4 mt-5">
+                <div class="col-md-6 col-lg-4 mt-5">
                     <div class="card">
                         <a href="#">
                             <img src="./img/s2.png" alt="">
@@ -127,7 +135,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-4 mt-5">
+                <div class="col-lg-4 mt-5">
                     <div class="card">
                         <a href="#">
                             <img src="./img/s3.png" alt="">
@@ -141,10 +149,10 @@
             </div>
         </div>
     </section>
-    <section class="about py-5">
+    <section class="about py-5" id="dabout">
         <div class="container py-lg-3 mt-3">
             <div class="row align-items-center">
-                <div class="col left">
+                <div class="col-lg-6 left">
                     <h6>ABOUT OUR COMPANY</h6>
                     <h3 class="mb-md-4 mb-3">The Best Choice For Your Successful Business!</h3>
                     <p class="mb-md-5 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est repellendus
@@ -152,12 +160,13 @@
                         similique reiciendis, ab est magnam esse nesciunt ea fuga facere voluptatem.</p>
                     <a href="#" class="btn btn-outline-danger theme-button">READ MORE</a>
                 </div>
-                <div class="col right">
+                <div class="col-lg-6 pl-lg-5 mt-lg-0 mt-5 right">
                     <img src="./img/about.jpg" alt="" class="img-fluid shadow img-curve">
                 </div>
             </div>
         </div>
     </section>
+    <!-- statistic  -->
     <section class="statistic pb-5 pt-4">
         <div class="container">
             <div class="row">
@@ -185,7 +194,7 @@
             </div>
         </div>
     </section>
-    <div style="margin: 8px 0"></div>
+    <div class="freespace"></div>
     <section class="commit">
         <div class="commit__bg">
             <div class="container">
@@ -204,7 +213,7 @@
             </div>
         </div>
     </section>
-    <section class="solutions">
+    <section class="solutions" id="mysolutions">
         <div class="solutions_content py-5">
             <div class="container py-lg-3">
                 <div class="title text-center">
@@ -280,6 +289,7 @@
             </div>
         </div>
     </section>
+    <!-- questions  -->
     <section class="questions container">
         <div class="title text-center">
             <h4>QUESTIONS AND ANSWERS</h4>
@@ -493,153 +503,268 @@
                 </div>
             </div>
     </section>
-    <section class="testimonials">
-        <div class="container py-md-3">
-            <div class="title text-center">
-                <h6>OUR CLIENTS TESTIMONIALS</h6>
-                <h3>What People Say</h3>
-                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis
-                    dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam..</p>
-            </div>
-        </div>
-        <div>
-            <div class="owl-carousel">
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-            </div>
-        </div>
-        <section class="community-index6 py-5">
-            <div class="container py-md-3 text-center">
+    <!-- testimonials  -->
+    <section class="w3l-testimonials" id="testimonials">
+        <div class="testimonials py-5">
+            <div class="container py-lg-3">
                 <div class="header-section text-center mx-auto">
-                    <h3>Ready to build your own brand community? </h3>
+                    <h6 class="sub-title">Our Clients Testimonials</h6>
+                    <h3>What People Say </h3>
                     <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
                         Curae;
                         Nulla mollis dapibus nunc, ut rhoncus
                         turpis sodales quis. Integer sit amet mattis quam.</p>
                 </div>
-                <div class="buttons mt-5">
-                    <a href="" class="btn btn-outline-primary mr-2 theme-button">Book a Demo</a>
-                    <a href="" class="btn btn-primary theme-button ml-2">Get Started</a>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <!-- footer -->
-            <section class="w3l-footer">
-                <div class="w3l-footer-16-main py-5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6 column">
-                                <div class="row">
-                                    <div class="col-md-4 column">
-                                        <h3>Company</h3>
-                                        <ul class="footer-gd-16">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="contact.html">Contact Us</a></li>
-                                        </ul>
+                <div class="row mt-4">
+                    <div class="col-md-12 mx-auto pb-5">
+                        <div class="owl-two owl-carousel owl-theme owl-loaded owl-drag">
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage"
+                                    style="transform: translate3d(-1150px, 0px, 0px); transition: all 0.5s ease 0s; width: 4600px;">
+                                    <div class="owl-item active" style="width: 575px;">
+                                        <div class="item">
+                                            <div class="slider-info mt-lg-4 mt-3">
+                                                <div class="img-circle">
+                                                    <img src="./img/team3.jpg" class="img-fluid testimonial-img"
+                                                        alt="client image">
+                                                </div>
+                                                <div class="message">
+                                                    <span class="fa fa-quote-left" aria-hidden="true"></span>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Assumenda corporis deleniti praesentium doloremque. Repellendus
+                                                        soluta quos nemo quisquam consectetur temporibus quam obcaecati
+                                                        sapiente quaerat et.</p>
+                                                    <div class="name mt-4">
+                                                        <h4>Isabella Mia</h4>
+                                                        <p>Company name</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-md-4 column mt-md-0 mt-4">
-                                        <h3>Useful Links</h3>
-                                        <ul class="footer-gd-16">
-                                            <li><a href="#url">Case Studies</a></li>
-                                            <li><a href="#url">Our Branches</a></li>
-                                            <li><a href="#url">Latest Media</a></li>
-                                            <li><a href="about.html">About Company</a></li>
-                                            <li><a href="#url">Our People</a></li>
-                                        </ul>
+                                    <div class="owl-item active" style="width: 575px;">
+                                        <div class="item">
+                                            <div class="slider-info mt-lg-4 mt-3">
+                                                <div class="img-circle">
+                                                    <img src="./img/team4.jpg" class="img-fluid testimonial-img"
+                                                        alt="client image">
+                                                </div>
+                                                <div class="message">
+                                                    <span class="fa fa-quote-left" aria-hidden="true"></span>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Assumenda corporis deleniti praesentium doloremque. Repellendus
+                                                        soluta quos nemo quisquam consectetur temporibus quam obcaecati
+                                                        sapiente quaerat et.</p>
+                                                    <div class="name mt-4">
+                                                        <h4>Benjamin Lucas</h4>
+                                                        <p>Company name</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-md-4 column mt-md-0 mt-4">
-                                        <h3>Our Services</h3>
-                                        <ul class="footer-gd-16">
-                                            <li><a href="#url">Privacy Policy</a></li>
-                                            <li><a href="#url">Our Terms</a></li>
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="landing-single.html">Landing Page</a></li>
-                                            <li><a href="#url">Our People</a></li>
-                                        </ul>
+                                    <div class="owl-item" style="width: 575px;">
+                                        <div class="item">
+                                            <div class="slider-info mt-lg-4 mt-3">
+                                                <div class="img-circle">
+                                                    <img src="./img/team5.jpg" class="img-fluid testimonial-img"
+                                                        alt="client image">
+                                                </div>
+                                                <div class="message">
+                                                    <span class="fa fa-quote-left" aria-hidden="true"></span>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Assumenda corporis deleniti praesentium doloremque. Repellendus
+                                                        soluta quos nemo quisquam consectetur temporibus quam obcaecati
+                                                        sapiente quaerat et.</p>
+                                                    <div class="name mt-4">
+                                                        <h4>Oliver Bradley</h4>
+                                                        <p>Company name</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item" style="width: 575px;">
+                                        <div class="item">
+                                            <div class="slider-info mt-lg-4 mt-3">
+                                                <div class="img-circle">
+                                                    <img src="./img/team6.jpg" class="img-fluid testimonial-img"
+                                                        alt="client image">
+                                                </div>
+                                                <div class="message">
+                                                    <span class="fa fa-quote-left" aria-hidden="true"></span>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Assumenda corporis deleniti praesentium doloremque. Repellendus
+                                                        soluta quos nemo quisquam consectetur temporibus quam obcaecati
+                                                        sapiente quaerat et.</p>
+                                                    <div class="name mt-4">
+                                                        <h4>William James</h4>
+                                                        <p>Company name</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-12 column pl-lg-5 column4 mt-lg-0 mt-5">
-                                <h3>Newsletter </h3>
-                                <div class="end-column">
-                                    <h4>Get latest updates and offers.</h4>
-                                    <form action="#" class="subscribe" method="post">
-                                        <input type="email" name="email" placeholder="Email Address" required="">
-                                        <button type="submit">Go</button>
-                                    </form>
-                                    <p>Sign up for our latest news &amp; articles. We won’t give you spam mails.</p>
-                                </div>
+                            <div class="owl-nav disabled"><button type="button" role="presentation"
+                                    class="owl-prev"><span aria-label="Previous"> <span class="fa fa-angle-left"></span>
+                                    </span></button><button type="button" role="presentation" class="owl-next"><span
+                                        aria-label="Next"> <span class="fa fa-angle-right"></span> </span></button>
                             </div>
-                        </div>
-                        <div class="d-flex below-section justify-content-between align-items-center pt-4 mt-5">
-                            <div class="columns text-lg-left text-center">
-                                <p>© 2020 Masterwork. All rights reserved | Designed by <a href="#">W3Layouts</a>
-                                </p>
-                            </div>
-                            <div class="columns-2 mt-lg-0 mt-3">
-                                <ul class="social">
-                                    <li><a href="#facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-                                    </li>
-                                    <li><a href="#linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
-                                    </li>
-                                    <li><a href="#twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-                                    </li>
-                                    <li><a href="#google"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
-                                    </li>
-                                    <li><a href="#github"><span class="fa fa-github" aria-hidden="true"></span></a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <div class="owl-dots"><button role="button"
+                                    class="owl-dot active"><span></span></button><button role="button"
+                                    class="owl-dot"><span></span></button></div>
                         </div>
                     </div>
                 </div>
-                <!-- move top -->
-                <button onclick="topFunction()" id="movetop" title="Go to top" style="display: block;">
-                    <span class="fa fa-angle-up"></span>
-                </button>
-            </section>
-            <!-- //footer -->
-        </footer>
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-            crossorigin="anonymous"></script>
-        <!-- Owl carousel  -->
-        <script src="./js/owl.carousel.min.js"></script>
-        <!-- <script src="./js/owl.pull.js"></script> -->
-        <script>
-            $(document).ready(function () {
-                $(".owl-carousel").owlCarousel();
-            });
-        </script>
-        <!-- CDN JQUERY JS  -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        </script>
-        <!-- CDN JQUERY waypoints -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
-            integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            </div>
+        </div>
+    </section>
+    <section class="community-index6 py-5">
+        <div class="container py-md-3 text-center">
+            <div class="header-section text-center mx-auto">
+                <h3>Ready to build your own brand community? </h3>
+                <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                    Curae;
+                    Nulla mollis dapibus nunc, ut rhoncus
+                    turpis sodales quis. Integer sit amet mattis quam.</p>
+            </div>
+            <div class="buttons mt-5">
+                <a href="" class="btn btn-outline-primary mr-2 theme-button">Book a Demo</a>
+                <a href="" class="btn btn-primary theme-button ml-2">Get Started</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <!-- footer -->
+        <section class="w3l-footer">
+            <div class="w3l-footer-16-main py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 column">
+                            <div class="row">
+                                <div class="col-md-4 column">
+                                    <h3>Company</h3>
+                                    <ul class="footer-gd-16">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 column mt-md-0 mt-4">
+                                    <h3>Useful Links</h3>
+                                    <ul class="footer-gd-16">
+                                        <li><a href="#url">Case Studies</a></li>
+                                        <li><a href="#url">Our Branches</a></li>
+                                        <li><a href="#url">Latest Media</a></li>
+                                        <li><a href="about.html">About Company</a></li>
+                                        <li><a href="#url">Our People</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 column mt-md-0 mt-4">
+                                    <h3>Our Services</h3>
+                                    <ul class="footer-gd-16">
+                                        <li><a href="#url">Privacy Policy</a></li>
+                                        <li><a href="#url">Our Terms</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="landing-single.html">Landing Page</a></li>
+                                        <li><a href="#url">Our People</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 column pl-lg-5 column4 mt-lg-0 mt-5">
+                            <h3>Newsletter </h3>
+                            <div class="end-column">
+                                <h4>Get latest updates and offers.</h4>
+                                <form action="#" class="subscribe" method="post">
+                                    <input type="email" name="email" placeholder="Email Address" required="">
+                                    <button type="submit">Go</button>
+                                </form>
+                                <p>Sign up for our latest news &amp; articles. We won’t give you spam mails.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex below-section justify-content-between align-items-center pt-4 mt-5">
+                        <div class="columns text-lg-left text-center">
+                            <p>© 2020 Masterwork. All rights reserved | Designed by <a href="#">W3Layouts</a>
+                            </p>
+                        </div>
+                        <div class="columns-2 mt-lg-0 mt-3">
+                            <ul class="social">
+                                <li><a href="#facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li><a href="#linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </li>
+                                <li><a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li><a href="#google"><i class="fa-brands fa-google-plus-g"></i></a>
+                                </li>
+                                <li><a href="#github"><i class="fa-brands fa-github"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- move top -->
+            <button onclick="topFunction()" id="movetop" title="Go to top" style="display: block;">
+                <span class="fa fa-angle-up"></span>
+            </button>
+        </section>
+        <!-- //footer -->
+    </footer>
 
-        <!-- <script src="../../../../../Libary/counting_up_number_js/jquery.countup.js"></script> -->
-        <script src="./js/jquery.countup.js"></script>
-        <script>
-            $('.counter').countUp();
-        </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+    <!-- CDN JQUERY JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </script>
+    <!-- CDN JQUERY waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./js/jquery.countup.js"></script>
+    <script>
+        $('.counter').countUp();
+    </script>
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 80) {
+                $("#header").addClass("nav-fixed");
+            } else {
+                $("#header").removeClass("nav-fixed");
+            }
+        });
+    </script>
+    <!-- Owl carousel  -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <!-- <script src="./js/owl.pull.js"></script> -->
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel();
+        });
+    </script>
+    <!-- THEME JS  -->
+    <script>
+        document.getElementById("switchButton").onclick = function () {
+            document.getElementById("myBody").classList.toggle("dark");
+        };
+    </script>
 </body>
 
 </html>
