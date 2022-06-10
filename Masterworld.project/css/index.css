@@ -631,6 +631,7 @@ a:hover {
 
 /* project  */
 .nav-tabs {
+    width: 100%;
     border-bottom: 1px solid #dee2e6;
     display: flex;
     justify-content: center;
@@ -647,7 +648,18 @@ a:hover {
     color: #4E5B61;
     background: #fff;
 }
+.projects .nav-item.nav-link{
+    border: none;
+    border-bottom: 2px solid rgb(193, 193, 193);
+    width: calc(100% / 3);
+    color: #4e5b61;
+}
 
+.projects .nav-item.nav-link.active{
+    border-bottom: 2px solid red;
+    color: #dc4f72;
+
+}
 .align-items-center {
     margin-top: 30px;
 }
