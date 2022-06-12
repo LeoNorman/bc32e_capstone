@@ -630,6 +630,9 @@ a:hover {
 }
 
 /* project  */
+.projects {
+    background-color: #fff;
+}
 .nav-tabs {
     width: 100%;
     border-bottom: 1px solid #dee2e6;
@@ -655,7 +658,14 @@ a:hover {
     color: #4e5b61;
 }
 
-.projects .nav-item.nav-link.active{
+.projects .nav-item.nav-link {
+    border: none;
+    border-bottom: 2px solid rgb(193, 193, 193);
+    width: calc(100% / 3);
+    color: #4e5b61;
+}
+
+.projects .nav-item.nav-link.active {
     border-bottom: 2px solid red;
     color: #dc4f72;
 
@@ -665,7 +675,7 @@ a:hover {
 }
 
 .projects {
-    background-color: #f7f9fc;
+    background-color: #fff;
 }
 
 /* testimonial  */
@@ -686,7 +696,12 @@ a:hover {
 .owl-theme .owl-dots .owl-dot:hover span {
     background-color: #dc4f72;
 }
-
+/* community  */
+.btn-outline-primary:hover{
+    color: #fff;
+    background-color: #dc4f72;
+    border-color: #dc4f72;
+}
 /* footer  */
 .w3l-footer ul.social li a {
     color: #2c3038;
