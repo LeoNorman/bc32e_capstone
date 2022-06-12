@@ -602,7 +602,10 @@ a:hover {
     font-weight: 700;
     color: #2c3038;
 }
-
+.card-header:first-child {
+    /* background-color: white; */
+    padding: 8px;
+}
 .questions .title p {
     font-size: 16px;
     line-height: 22.5px;
@@ -690,6 +693,18 @@ a:hover {
 .owl-theme .owl-dots .owl-dot:hover span {
     background-color: #dc4f72;
 }
+/* community  */
+.btn-outline-primary:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(220, 79, 114);
+    border-color: rgb(220, 79, 114);
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #dc4f72;
+    border-color: #dc4f72;
+}
+
 /* footer  */
 .w3l-footer ul.social li a {
     color: #2c3038;
