@@ -651,12 +651,15 @@ a:hover {
     color: #4E5B61;
     background: #fff;
 }
+<<<<<<< HEAD
 .projects .nav-item.nav-link{
     border: none;
     border-bottom: 2px solid rgb(193, 193, 193);
     width: calc(100% / 3);
     color: #4e5b61;
 }
+=======
+>>>>>>> 13ac8e93717bba87f0948db04c8f332805336bf6
 
 .projects .nav-item.nav-link {
     border: none;
@@ -670,6 +673,10 @@ a:hover {
     color: #dc4f72;
 
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 13ac8e93717bba87f0948db04c8f332805336bf6
 .align-items-center {
     margin-top: 30px;
 }
@@ -696,12 +703,16 @@ a:hover {
 .owl-theme .owl-dots .owl-dot:hover span {
     background-color: #dc4f72;
 }
+<<<<<<< HEAD
 /* community  */
 .btn-outline-primary:hover{
     color: #fff;
     background-color: #dc4f72;
     border-color: #dc4f72;
 }
+=======
+
+>>>>>>> 13ac8e93717bba87f0948db04c8f332805336bf6
 /* footer  */
 .w3l-footer ul.social li a {
     color: #2c3038;

@@ -2,6 +2,7 @@
 #switchButton .fa-sun {
   display: none;
 }
+
 /* Dark Theme*/
 .dark #switchButton .fa-sun {
   display: block;
@@ -34,10 +35,12 @@
   background-color: #dc4f72;
   color: #fff;
 }
+
 .dark #header .navbar-nav .header__btn .btn-outline-danger:hover {
   background-color: #fff;
   color: #dc4f72;
 }
+
 /* carousel */
 .dark .carousel__content {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.85)), url(../img/banner.jpg);
@@ -55,6 +58,7 @@
   background-color: #dc4f72;
   color: #fff;
 }
+
 .dark #dcarousel .theme-button:hover {
   background-color: #fff;
   color: #dc4f72;
@@ -148,6 +152,7 @@
   background-color: #dc4f72;
   border-color: #dc4f72;
 }
+
 .dark .commit .btn-light:hover {
   background-color: #fff;
   color: var(--primary);
@@ -263,7 +268,11 @@
   border-color: #dc4f72;
 }
 
+<<<<<<< HEAD
 .dark .btn-outline-danger:hover {
+=======
+.dark .btn-outline-danger hover {
+>>>>>>> 13ac8e93717bba87f0948db04c8f332805336bf6
   background-color: #fff;
   color: #dc4f72;
 }
@@ -291,7 +300,11 @@
   background-color: #000;
 }
 
+<<<<<<< HEAD
 .dark .btn-primary:hover {
+=======
+.btn-primary:hover {
+>>>>>>> 13ac8e93717bba87f0948db04c8f332805336bf6
   background-color: #fff;
   color: #dc4f72;
 }
@@ -304,7 +317,11 @@
   color: rgb(238, 238, 238);
 }
 
+<<<<<<< HEAD
 .dark .btn-outline-primary:hover {
+=======
+.btn-outline-primary:hover {
+>>>>>>> 13ac8e93717bba87f0948db04c8f332805336bf6
   background-color: #fff;
   color: #dc4f72;
 }
