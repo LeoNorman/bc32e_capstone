@@ -421,6 +421,7 @@ a:hover {
 .freespace {
     padding: 4px 0;
 }
+
 /* COMMIT */
 
 .commit__bg {
@@ -579,4 +580,130 @@ a:hover {
     .solutions .title h3 {
         font-size: 30px;
     }
+}
+
+/* questions  */
+.questions {
+    background-color: #f7f9fc;
+    padding-top: 100px;
+}
+
+.questions .title h4 {
+    color: #dd5572;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.questions .title h2 {
+    font-size: 46px;
+    line-height: 1;
+    font-weight: 700;
+    color: #2c3038;
+}
+
+.questions .title p {
+    font-size: 16px;
+    line-height: 22.5px;
+    font-weight: 400;
+}
+
+.questions .col right #accordion .card {
+    background-color: #ffffff;
+    background-size: cover;
+}
+
+.btn-link {
+    color: black;
+    height: 70px;
+    font-size: 20px;
+}
+
+.btn-link:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.card-header:first-child {
+    background-color: white;
+}
+
+/* project  */
+.projects {
+    background-color: #fff;
+}
+.nav-tabs {
+    width: 100%;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 15px;
+    margin: 0;
+    list-style: none;
+    cursor: pointer;
+    /* float: left; */
+    /* width: 33.333%; */
+    text-align: center;
+    color: #4E5B61;
+    background: #fff;
+}
+
+.projects .nav-item.nav-link {
+    border: none;
+    border-bottom: 2px solid rgb(193, 193, 193);
+    width: calc(100% / 3);
+    color: #4e5b61;
+}
+
+.projects .nav-item.nav-link.active {
+    border-bottom: 2px solid red;
+    color: #dc4f72;
+
+}
+
+.align-items-center {
+    margin-top: 30px;
+}
+
+.projects {
+    background-color: #fff;
+}
+
+/* testimonial  */
+#testimonials {
+    background-image: url(../img/b2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 40px;
+    height: 5px;
+    background-color: #ffffff;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #dc4f72;
+}
+/* community  */
+.btn-outline-primary:hover{
+    color: #fff;
+    background-color: #dc4f72;
+    border-color: #dc4f72;
+}
+/* footer  */
+.w3l-footer ul.social li a {
+    color: #2c3038;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
 }
