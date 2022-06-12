@@ -268,7 +268,7 @@
   border-color: #dc4f72;
 }
 
-.dark .btn-outline-danger hover {
+.dark .btn-outline-danger:hover {
   background-color: #fff;
   color: #dc4f72;
 }
