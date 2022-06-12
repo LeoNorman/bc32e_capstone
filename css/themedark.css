@@ -268,11 +268,7 @@
   border-color: #dc4f72;
 }
 
-<<<<<<< HEAD
-.dark .btn-outline-danger:hover {
-=======
 .dark .btn-outline-danger hover {
->>>>>>> 13ac8e93717bba87f0948db04c8f332805336bf6
   background-color: #fff;
   color: #dc4f72;
 }
@@ -300,11 +296,7 @@
   background-color: #000;
 }
 
-<<<<<<< HEAD
-.dark .btn-primary:hover {
-=======
 .btn-primary:hover {
->>>>>>> 13ac8e93717bba87f0948db04c8f332805336bf6
   background-color: #fff;
   color: #dc4f72;
 }
@@ -317,11 +309,7 @@
   color: rgb(238, 238, 238);
 }
 
-<<<<<<< HEAD
-.dark .btn-outline-primary:hover {
-=======
 .btn-outline-primary:hover {
->>>>>>> 13ac8e93717bba87f0948db04c8f332805336bf6
   background-color: #fff;
   color: #dc4f72;
 }
